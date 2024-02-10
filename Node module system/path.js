@@ -1,20 +1,20 @@
-// path module
 const path = require('path');
-// console.log(__filename);
-const pathObj = path.parse(__filename);
+
+// const pathObj  = path.parse(__filename);
+
+// console.log(pathObj, pathObj.dir); // _filename
+
+// basename();
+// const pathObj = path.basename('/foo/bar/baz/asdf/quux.html');
+
 // console.log(pathObj);
 
-// basename
-// console.log(path.basename(__filename, '.js')); 
+// join();
+// let pathObj = path.join('/foo', 'bar', 'baz/asdf', 'quux', '..');
 
-//dirname
-// console.log(path.dirname(__filename))
+// console.log(pathObj);
 
-// extname
-// console.log(path.extname(__filename));
+// normalize();
+let pathObj = path.normalize('C:\\temp\\\\foo\\bar\\..\\');
 
-// isAbsolute
-// console.log(path.isAbsolute(__filename));
-
-// join
-console.log(path.join('a', 'b', 'c'));
+console.log(pathObj);
